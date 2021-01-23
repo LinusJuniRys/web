@@ -1,0 +1,373 @@
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+p {
+  color: #8a8a8a;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 38px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 30px;
+  margin-top: 32px;
+  font-size: 0.9rem;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rys-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  grid-column-gap: 5px;
+}
+
+.rys-item-wrapper {
+  position: relative;
+}
+
+.rys-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+  /* background-color: rgba(255,255,255,0.7); */
+  transition: 1s;
+  color: transparent;
+  margin-top: 300px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.img-text-wrapper:hover .subtitle {
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(100%);
+}
+
+.footer-wrapper {
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.08);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-items{
+  display: flex;
+  padding-left: auto;
+}
+
+.footer-item {
+  padding-left: 60px;
+}
+
+.social-media {
+  padding-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.rss.opacity{
+  filter: opacity(30%);
+}
+
+/* OM RYSENSTEEN */
+
+.hvad-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hvad-text{
+  padding-left: 38px;
+  padding-right: 38px;
+  font-size: 1.2rem;
+}
+
+.hvor-wrapper {
+  background-color: rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hvor-text{
+  padding-left: 38px;
+  padding-right: 38px;
+  font-size: 1.2rem;
+}
+
+.gcp-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gcp-text{
+  padding-left: 38px;
+  padding-right: 38px;
+  font-size: 1.2rem;
+}
+
+/* RYSFESTER */
+
+.slideshow-title{
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.slideshow-subtitle{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+* {box-sizing:border-box}
+
+  /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+  /* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+  /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+  /* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+  /* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+  /* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+  /* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 20px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+  /* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* FÆLLESSKABER */
+
+.om-fællesskaber{
+  text-align: center;
+  margin-left: 182px;
+  margin-right: 182px;
+  font-size: 1.2rem;
+}
+
+.fællesskaber-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-column-gap: 5px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* STUDIERETNINGER */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: rgb(173,224,255);
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 35px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.collapsible1 {
+  background-color: rgb(254,170,170);
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 35px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: rgb(173,240,255);
+}
+
+.active, .collapsible1:hover {
+  background-color: rgb(254,189,170);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.intro-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin-left: 38px;
+  margin-right: 38px;
+}

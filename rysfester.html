@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title>Rysfester</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">FORSIDE</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="om-rysensteen.html">OM RYSENSTEEN</a>
+        </div>
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="rysfester.html">RYSFESTER</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="fællesskaber.html">FÆLLESSKABER</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="studieretninger.html">STUDIERETNINGER</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="rysensteen-logo">
+          <a href="https://rysensteen.dk">
+            <img src="https://i.imgur.com/Ps5tbZw.png" alt="rysensteen-logo" style= "width: 80px">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="slideshow-title"> Se nogle billeder fra vores rysfester </h1>
+
+    <p class="slideshow-subtitle"> Du kan se flere billeder på <a href="https://www.facebook.com/festudvalget.rysensteen"> festudvalgets facebook-side </a> </p>
+
+<!-- SLIDESHOW -->
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://scontent-cph2-1.xx.fbcdn.net/v/t1.0-9/84094740_2541931822574112_2039648044378488832_o.jpg?_nc_cat=110&ccb=2&_nc_sid=cdbe9c&_nc_ohc=p4XNvZGq960AX-BwnHy&_nc_ht=scontent-cph2-1.xx&oh=fe526e7c736587c2e59670c6b5a2aa92&oe=602C7483" style="width:100%">
+      <div class="text">Crystal og Candice</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://scontent-cph2-1.xx.fbcdn.net/v/t1.0-9/84316943_2541930892574205_2828971202687533056_o.jpg?_nc_cat=107&ccb=2&_nc_sid=cdbe9c&_nc_ohc=ktvRF5lwHHcAX9P0Vwm&_nc_ht=scontent-cph2-1.xx&oh=8124d020eed3dabdcf0a2dbd5cb4516d&oe=602CE861" style="width:100%">
+      <div class="text">Drengene styrer DJ-pulten</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://scontent-cph2-1.xx.fbcdn.net/v/t1.0-9/83515005_2541932659240695_6202212678442680320_o.jpg?_nc_cat=103&ccb=2&_nc_sid=cdbe9c&_nc_ohc=53dIr5z66WIAX9iFSZN&_nc_ht=scontent-cph2-1.xx&oh=1b5067d4f9c665cea5477e8cc98e7e12&oe=602B9E0C" style="width:100%">
+      <div class="text">Rave-fest</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://i.imgur.com/ZtZy6AO.png" style="width:1000px;">
+      <div class="text">MP lukker festen med et brag</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+
+  <div class="footer-wrapper">
+    <div class="footer-items">
+      <div class="footer-item">
+        <div class="footer-link-wrapper">
+          <h1> KONTAKT </h1>
+        </div>
+            <p> Tietgensgade 74 </p>
+            <p> 1704 København V </p>
+            <p> +45 33 24 43 11</p>
+            <p> mail@rysensteen.dk </p>
+      </div>
+
+      <div class="footer-item">
+        <h1> SOCIALE MEDIER </h1>
+          <div class="social-media">
+            <a href="https://www.facebook.com/Rysensteen-Gymnasium-838784399583507/">
+              <img src="https://i.pinimg.com/originals/1b/60/f9/1b60f9d42fd84e31b304d5e7779cccfd.png" alt="facebook" style="width: 80px; height: 80px;" class="rss opacity">
+            </a>
+            <a href="https://www.instagram.com/rysensteengym/?hl=da">
+              <img src="https://cdn.iconscout.com/icon/free/png-512/instagram-201-599421.png" alt="instagram" style="width: 80px; height: 80px;" class="rss opacity">
+            </a>
+          </div>
+      </div>
+
+      <div class="footer-item">
+        <h1> LAVET AF </h1>
+        <p> Adam 2018y</p>
+        <p> Carl 2018y</p>
+        <p> Linus 2018y</p>
+        <p> Olivia 2018y</p>
+        <p> ...som et projekt i informatik</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+</body>
+</html>
